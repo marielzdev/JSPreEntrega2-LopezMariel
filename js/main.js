@@ -95,7 +95,7 @@ const confirmBuy = () => {
   );
 
   if (confirmar) {
-    endShipping(listOfProducts);
+    endShopping(listOfProducts);
   } else {
     const productDelete = prompt(
       "Por favor ingrese el nombre del producto a eliminar:"
@@ -104,7 +104,7 @@ const confirmBuy = () => {
   }
 };
 
-const endShipping = (listOfProducts) => {
+const endShopping = (listOfProducts) => {
   const quantityTotal = cart.reduce(
     (acc, element) => acc + element.quantity,
     0
